@@ -32,33 +32,15 @@ else{
     echo "<br>You must select designation";
 }
 
-if(isset($_REQUEST["Jrpro"]) || isset($_REQUEST["Srpro"]) || isset($_REQUEST["Prlead"]))
+if(isset($_REQUEST["pref"]))
 {
-    if(isset($_REQUEST["Jrpro"]) && isset($_REQUEST["Srpro"]) && isset($_REQUEST["Prlead"]) ){
-        echo "<br> You have selected ".$_REQUEST["Jrpro"]." and ".$_REQUEST["Srpro"]." and ".$_REQUEST["Prlead"];
-    }
-    else if(isset($_REQUEST["Jrpro"]) && isset($_REQUEST["Srpro"])){
-        echo "<br> You have selected ".$_REQUEST["Jrpro"]." and ".$_REQUEST["Srpro"];
-    }
-    else if(isset($_REQUEST["Srpro"]) && isset($_REQUEST["Prlead"])){
-        echo "<br> You have selected ".$_REQUEST["Srpro"]." and ".$_REQUEST["Prlead"];
-    }
-    else if(isset($_REQUEST["Jrpro"]) && isset($_REQUEST["Prlead"])){
-        echo "<br> You have selected ".$_REQUEST["Jrpro"]." and ".$_REQUEST["Prlead"];
-    }
-    else if(isset($_REQUEST["Jrpro"])){
-        echo "<br> You have selected ".$_REQUEST["Jrpro"];
-    }
-    else if(isset($_REQUEST["Srpro"])){
-        echo "<br> You have selected ".$_REQUEST["Srpro"];
-    }
-    else{
-        echo "<br> You have selected ".$_REQUEST["Prlead"];
-    }
+    $pref=$_REQUEST["pref"];
+    echo "<br>Your designation is ".$pref;
 }
 else{
-    echo "<br>You must select preferance";
+    echo "<br>You must select designation";
 }
+
 
 if(empty($_REQUEST["male"])){
     echo "<br>Email should not be empty";
