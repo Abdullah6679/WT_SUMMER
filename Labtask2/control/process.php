@@ -1,5 +1,5 @@
 <?php
-$name=$_REQUEST["firstnamename"];
+$name=$_REQUEST["firstname"];
 if(empty($name)){
     echo"<br>Your first name should not be empty";
 }
@@ -10,7 +10,7 @@ else if(strlen($name)<4)
 else{
     echo"<br>Your first name is ".$name;
 }
-$name2=$_REQUEST["lname"];
+$name2=$_REQUEST["lastname"];
 if(strlen($name2)<4)
 if(empty($name2)){
     echo"<br>Your last name should not be empty";
